@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Order Salad</title>
+	<style>
+		html{	
+		
+		}
+		h3 {	font-size: 20px;
+				padding: 5px;
+				text-align: center;
+				color: #8bcd42;
+		}
+		form {	font-size: 24px;
+				text-align: center;
+				
+		}
+		input[type='checkbox'] {
+				-webkit-appearance:none;
+				width:30px;
+				height:30px;
+				background:white;
+				border-radius:5px;
+				border:1px solid #555;
+		}
+		input[type='checkbox']:checked {
+				background: #daefc3;
+		}
+		input[type='radio'] {
+				-webkit-appearance:none;
+				width:30px;
+				height:30px;
+				background:#FFFFFF;
+				border-radius:5px;
+				border:1px solid #555;
+		}
+		input[type='radio']:checked {
+				background: #daefc3;
+		}		
+		div.option{ 	overflow:hidden;
+				background: #FDA02D;
+				margin: 5px;
+			}
+		ul.order{		width:40%;
+				float: left;
+
+			}			
+		li.order {	list-style-type: none; 
+				padding: 5px 30px;
+				
+				
+		}
+		h4 {	background-color: #8bcd42;
+				padding: 10px 20px;
+				color: #FFFFFF;
+				border: none;
+			}
+				
+		.block{	display: block;
+				width: 100%;
+				border: none;
+				background-color: #8bcd32;
+				padding: 10px 20px;
+				text-align: center;
+				color: #FFFFFF;
+				font-size: 24px;
+			}
+
+	</style>
+</head>
+<body>
+	<h3> Welcome to Simple Salad!</h3>
+	<h3> How would you like your salad?</h3>
+	</br>
+	<form>
+		<div>
+		<h4>VEGETABLE (As many as you like)</h4> 
+		
+		<div class="option">
+			<ul class="order">
+			<li class="order"><input type="checkbox" id="Lettuce" name="vegie">Lettuce</li>
+			<li class="order"><input type="checkbox" id="Tomato" name="vegie">Tomato</li>
+			</ul>
+			<ul class="order">
+			<li class="order"><input type="checkbox" id="Onion" name="vegie">Onion</li>
+			<li class="order"><input type="checkbox" id="Cabbage" name="vegie">Cabbage</li>
+			</ul>
+			</div>
+	
+		</div>
+		<div>
+		<h4>PROTEIN (Choose one)</h4>
+		<div class="option">
+			<ul class="order">
+			<li class="order"><input type="radio" id="Chicken" name="protein">Chicken</li>
+			<li class="order"><input type="radio" id="Beef" name="protein">Beef</li>
+			</ul>
+			<ul class="order">
+			<li class="order"><input type="radio" id="Tofu" name="protein">Tofu</li>
+			<li class="order"><input type="radio" id="Tuna" name="protein">Tuna</li>
+			</ul>
+		</div>
+		</div>
+		<div>
+		<h4>GRAIN (Choose one)</h4>
+		<div class="option">
+			<ul class="order">
+			<li class="order"><input type="radio" id="Rice" name="grain">Rice</li>
+			<li class="order"><input type="radio" id="Noodle" name="grain">Noodle</li>
+			</ul>
+			<ul class="order">
+			<li class="order"><input type="radio" id="Croutons" name="grain">Croutons</li>
+			<li class="order"><input type="radio" id="Bread" name="grain">Side Bread</li>
+			</ul>
+		</div>
+		</div>
+		</br>
+		<input type="button" class="block" onclick="showVal()" value="Order!">
+	</form>
+	
+	<script language="javascript" type="text/javascript">
+	function showVal(){
+
+		ChickenP = 10, BeefP = 12, TofuP = 8, TunaP = 12;
+	
+		var subtotal = 0, tax = 0, total = 0;
+
+		if (document.getElementById("Chicken").checked == true)
+			subtotal = ChickenP;
+		else if (document.getElementById("Beef").checked == true)
+			subtotal = BeefP;
+		else if (document.getElementById("Tofu").checked == true)
+			subtotal = TofuP;
+		else if (document.getElementById("Tuna").checked == true)
+			subtotal = TunaP;
+			
+		tax = subtotal * 0.0625;
+		tax = tax.toFixed(2);
+		total = Number(subtotal) + Number(tax);
+		
+		document.write(
+				"Thank you for your order!</br>" +
+				"Your salad is now being prepared!</br>" +
+				"Subtotal: $" + subtotal + "</br>" +
+				"Tax: $" + tax + "</br>" +
+				"Total: $" + total);
+	}
+	
+	</script>
+</body>
+</html>
