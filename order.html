@@ -3,14 +3,39 @@
 <head>
 <meta charset="utf-8">
 <title>Order Salad</title>
+
 	<style>
-		html{	
-		
-		}
-		h3 {	font-size: 20px;
-				padding: 5px;
+		body{
+				font-family: Roboto, Arial, Helvetica, sans-serif;
 				text-align: center;
-				color: #8bcd42;
+				font-weight: bold;
+				font-size: 24px;
+				color: #FFFFFF;
+				margin: 0;
+		}
+		ul.header {
+				font-size: 1.3em;
+				list-style-type: none;
+				overflow: hidden;
+				background-color: #8BCD32;
+				position: fixed;
+				top: 0;
+				width: 100%;
+				margin: 0;
+				padding: 0;
+		}
+		li.header {
+				float: left;
+		}
+		li a {
+				display: block;
+				color: #FFF;
+				text-align: center;
+				padding: 30px;
+				text-decoration: none;
+		}
+		li a:hover {
+				background-color: #FDA02D;
 		}
 		form {	font-size: 24px;
 				text-align: center;
@@ -35,47 +60,92 @@
 				border-radius:5px;
 				border:1px solid #555;
 		}
+		
 		input[type='radio']:checked {
 				background: #daefc3;
-		}		
-		div.option{ 	overflow:hidden;
+		}			
+		div.option{ 	
+				overflow:hidden;
 				background: #FDA02D;
-				margin: 5px;
-			}
-		ul.order{		width:40%;
+				margin: 40px 60px;
+		}		
+		ul.order{		
+				width:40%;
 				float: left;
 
-			}			
-		li.order {	list-style-type: none; 
+		}		
+		li.order {	
+				list-style-type: none; 
 				padding: 5px 30px;
-				
-				
+				color: #FFFFFF;
+					
 		}
-		h4 {	background-color: #8bcd42;
-				padding: 10px 20px;
+		h4.order {	
+				background-color: #8bcd42;
+				padding: 20px 20px;
 				color: #FFFFFF;
 				border: none;
-			}
+				margin: 40px 60px;
+		}
 				
-		.block{	display: block;
+		.block{	
+				display: block;
 				width: 100%;
 				border: none;
-				background-color: #8bcd32;
-				padding: 10px 20px;
+				background-color: #8bcd42;
+				padding: 15px 30px;
 				text-align: center;
 				color: #FFFFFF;
+				font-size: 30px;
+		}
+		div.price{
 				font-size: 24px;
-			}
+		}
+		#footer {
+				margin: 0;
+				width: 100%;
+				height: 50px;
+				background-color: #8BCD32;
+				display: flex;
+				align-items: center;
+		}
 
+		#legal {
+				font-size: 15px;
+				float: left;
+				width: 50%;
+				text-align: left;
+				padding-left: 3%;
+		}
+
+		#questions {
+				font-size: 15px;
+				float: right;
+				width: 50%;
+				text-align: right;
+				padding-right: 3%;
+		}
+		.footer_link {
+				color: #FFFFFF;
+		}
+
+	
 	</style>
 </head>
 <body>
-	<h3> Welcome to Simple Salad!</h3>
-	<h3> How would you like your salad?</h3>
+<ul class="header">
+  <li class="header"><a href="">SimpleSalad</a></li>
+  <li class="header"><a href="">Menu</a></li>
+  <li class="header"><a href="">Order</a></li>
+  <li class="header"><a href="">Contact</a></li>
+</ul>
+	</br>
+	</br>
+	</br>
 	</br>
 	<form>
 		<div>
-		<h4>VEGETABLE (As many as you like)</h4> 
+		<h4  class="order">VEGETABLE (As many as you like)</h4> 
 		
 		<div class="option">
 			<ul class="order">
@@ -90,7 +160,7 @@
 	
 		</div>
 		<div>
-		<h4>PROTEIN (Choose one)</h4>
+		<h4 class="order">PROTEIN (Choose one)</h4>
 		<div class="option">
 			<ul class="order">
 			<li class="order"><input type="radio" id="Chicken" name="protein">Chicken</li>
@@ -103,7 +173,7 @@
 		</div>
 		</div>
 		<div>
-		<h4>GRAIN (Choose one)</h4>
+		<h4 class="order">GRAIN (Choose one)</h4>
 		<div class="option">
 			<ul class="order">
 			<li class="order"><input type="radio" id="Rice" name="grain">Rice</li>
@@ -115,9 +185,19 @@
 			</ul>
 		</div>
 		</div>
-		</br>
-		<input type="button" class="block" onclick="showVal()" value="Order!">
+		<input type="button" class="block" onclick="showVal()" value="Order">
 	</form>
+	</br>
+        <div id="footer">
+            <div id="legal">
+                © 2019 SimpleSalad™ Inc. All Rights Reserved.
+            </div>
+            <div id="questions">
+                Have any questions?
+                <a href="#contact_us.html" class="footer_link">Contact us</a>
+            </div>
+        </div>
+	
 	
 	<script language="javascript" type="text/javascript">
 	function showVal(){
@@ -138,14 +218,14 @@
 		tax = subtotal * 0.0625;
 		tax = tax.toFixed(2);
 		total = Number(subtotal) + Number(tax);
-		
-		document.write(
-				"Thank you for your order!</br>" +
-				"Your salad is now being prepared!</br>" +
-				"Subtotal: $" + subtotal + "</br>" +
-				"Tax: $" + tax + "</br>" +
-				"Total: $" + total);
-	}
+		tax = total.toFixed(2);
+		alert(
+				"Thank you for your order!\n" +
+				"Your salad is now being prepared!\n" +
+				"Subtotal: $" + subtotal + "\n" +
+				"Tax: $" + tax + "\n" +
+				"Total: $" + total + "\n");
+		}
 	
 	</script>
 </body>
