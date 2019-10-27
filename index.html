@@ -1,51 +1,81 @@
 <!DOCTYPE html>
 <html>
-<meta charset="utf-8">
-<title>Protect The Amazon</title>
-<head>
-<style>
-  
-ul {
-  font-size: 1.3em;
-  list-style-type: none;
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: #FFF;
-  text-align: center;
-  padding: 30px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #111111; 
-}
-
-</style>
-  <link rel= "stylesheet" href= "style_sheet.css">
-</head>
-<body>
-  
-<ul>
-  <li><a href="#index.html">SimpleSalad</a></li>
-  <li><a href="#menu.html">Menu</a></li>
-  <li><a href="#order.html">Order</a></li>
-  <li><a href="#contact.html">Contact</a></li>
-</ul>
-  
-<div class="img"></div>
+    <meta charset="utf-8">
+    <script src="../jquery/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="../jquery/jquery.cycle.all.js"></script>
+    <link rel="icon" href="images/logo.png">
+    <title>Protect The Amazon</title>
+    <head>
+        <style>  
+            ul {
+                font-size: 1.3em;
+                list-style-type: none;
+                overflow: hidden;
+                background-color: #333;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            li {
+                float: left;
+            }
+            li a {
+                display: block;
+                color: #FFF;
+                text-align: center;
+                padding: 30px;
+                text-decoration: none;
+            }
+            li a:hover {
+                background-color: #111111; 
+            }
+            #slideshowContainer {
+                width: 632px;
+                margin: 100px auto 0 auto;
+                position:relative;
+            }
+            .slideshow {
+                height: 332px;
+            }
+            .slideshow img {
+                padding: 15px;
+                border: 1px solid #ccc;
+                background-color: #080;
+            }
+        </style>
+    <link rel= "stylesheet" href= "style_sheet.css">
+    <script type="text/javascript">
+        $(document).ready(function() {	
+            $('.slideshow').cycle({
+                fx: 'fade',
+                timeout: 1000,
+                pause: 1,
+            });
+        });
+    </script>
+    </head>
+    <body>
+    
+    <ul>
+    <li><a href="#index.html">SimpleSalad</a></li>
+    <li><a href="#menu.html">Menu</a></li>
+    <li><a href="#order.html">Order</a></li>
+    <li><a href="#contact.html">Contact</a></li>
+    </ul>
+    
+    <div class="img"></div>
+    <div id="slideshowContainer">
+        <h1>Food</h1>
+        <div class="slideshow">
+            <img src="images/pic1.jpg" width="600" height="300" />
+            <img src="images/pic2.jpg" width="600" height="300" />
+            <img src="images/pic3.jpg" width="600" height="300" /> 
+            <img src="images/pic4.jpg" width="600" height="300" />          
+            <img src="images/pic5.jpg" width="600" height="300" />                   
+        </div>
+    </div>
     
 </body>
 </html>
