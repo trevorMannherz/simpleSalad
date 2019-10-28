@@ -1,121 +1,107 @@
-body{
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-weight: bold;
-    font-size: 24px;
-    color: #FFFFFF;
-    margin: 0;
-}
+<!DOCTYPE html>
+<html>
+<head>
+<style>
 
-#footer {
-    margin: 0;
+ .menu {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule: solid 1px;
+    column-rule-color: #8BCD32;
+    text-align: center;
+    vertical-align:text-top;
+ }
+ .keeptogether {
+    display: inline-block;
     width: 100%;
-    height: 50px;
-    background-color: #8BCD32;
-    display: flex;
-    align-items: center;
+ }
+ body{
+    margin-top: 70px;
+ }
+
+    menu li{
+        display: block;
+        color: #8BCD32;
+        text-align: center;
+        text-decoration: none;
+        list-style-type: none;
+        font-size: 2.5vw;
+        padding:10px;
+    }
+    menu li a{
+      text-decoration: none;
+      color: #8BCD32;
+    }
+    menu li a:hover {
+
+        background-color: #FDA02D;
+    }
+h1 {
+  color: #8BCD32;
+  font-size: 6vw;
 }
 
-#legal {
-    font-size: 15px;
-    float: left;
-    width: 50%;
-    text-align: left;
-    padding-left: 3%;
-}
-
-#questions {
-    font-size: 15px;
-    float: right;
-    width: 50%;
-    text-align: right;
-    padding-right: 3%;
-}
-
-.footer_link {
-    color: #FFFFFF;
-}
-
-#top {
-    text-align: center;
-    background-color: #8BCD32;
-    margin-bottom: 40px;
-    margin-top: 150px;
-    width: 80%;
-    display: inline-block;
-    padding: 6%;
-    padding-top: 3%;
-}
-
-.top_divider {
-    height: 8px;
-    background-color: #FFFFFF;
-    text-align: center;
-    width: 50%;
-    border: none;
-}
-
-.ingr_type {
-    text-align: center;
-    font-size: 44px;
-}
-
-.banner_1, .banner_2 {
-    margin-bottom: 40px;
-    width: 80%;
-    display: inline-block;
-    padding: 6%;
-}
-
-.banner_1 {background-color: #FDA02D;}
-.banner_2 {background-color: #8BCD32;}
-
-.banner_1 p {
-    text-align: right;
-    width: 50%;
-    float: right;
-    margin-top: 6%;
-}
-
-.banner_2 p {
-    text-align: left;
-    width: 50%;
-    float: left;
-    margin-top: 6%;
-}
-
-.left_image {
-    width: 40%;
-    float: left;
-}
-
-.right_image {
-    width: 40%;
-    float: right;
-}
-
-
-ul {
-  font-size: 1.3em;
-  list-style-type: none;
-  overflow: hidden;
-  background-color: #8BCD32;
-  position: fixed;
-  top: 0;
-  width: 100%;
+h2{
   margin: 0;
-  padding: 0;
+  font-size: 4vw;
 }
-li {
-  float: left;
-}
-li a {
-  display: block;
-  color: #FFF;
-  text-align: center;
-  padding: 30px;
-  text-decoration: none;
-}
-li a:hover {
-  background-color: #FDA02D;
-}
+
+</style>
+<link rel= "stylesheet" href= "gustavo_style.css">
+</head>
+
+<body>
+<ul class="header">
+  <li class="header"><a href="index.html">SimpleSalad</a></li>
+  <li class="header"><a href="menu.html">Menu</a></li>
+  <li class="header"><a href="order.html">Order</a></li>
+  <li class="header"><a href="contact.html">Contact</a></li>
+</ul>
+
+<div class="menu">
+    <div class="keeptogether">
+      <h1>Step 1</h1>
+      <li><h2><a href="vegetable.html">Choose your Vegetables</a></h2></li>
+      <ul>
+        <li>Lettuce</li>
+        <li>Tomato</li>
+        <li>Onion</li>
+        <li>Cabbage</li>
+      </ul>
+    </div>   
+<br><br>
+    <div class="keeptogether">
+      <h1>Step 2</h1>
+      <li><h2><a href="grains.html">Choose your Grain</a></h2></li>
+      <ul>
+        <li>Rice</li>
+        <li>Noodles</li>
+        <li>Crutons</li>
+        <li>Side Bread</li>
+      </ul>
+    </div>   
+<br><br>
+    <div class="keeptogether"> 
+      <h1>Step 3</h1>
+      <li><h2><a href="protein.html">Choose your Protein</a></h2></li>
+      <ul>
+        <li>Chicken</li>
+        <li>Beef</li>
+        <li>Tuna</li>
+        <li>Tofu</li> 
+      </ul>
+    </div>     
+ </div>
+
+<div id="footer">
+    <div id="legal">
+        © 2019 SimpleSalad™ Inc. All Rights Reserved.
+    </div>
+    <div id="questions">
+        Have any questions?
+        <a href="contact.html" class="footer_link">Contact us</a>
+    </div>
+</div>
+
+</body>
+</html>
