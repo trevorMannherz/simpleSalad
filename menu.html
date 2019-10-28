@@ -3,70 +3,88 @@
 <head>
 <style>
 
+ .menu {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule: solid 1px;
+    column-rule-color: #8BCD32;
+    text-align: center;
+    vertical-align:text-top;
+ }
+ .keeptogether {
+    display: inline-block;
+    width: 100%;
+ }
+ body{
+/*    background-color: #DCEDFC;*/
+ }
+
+    li{
+        display: block;
+        color: #8BCD32;
+        text-align: center;
+        text-decoration: none;
+        list-style-type: none;
+        font-size: 2vw;
+        padding:5px;
+    }
+    li a{
+      text-decoration: none;
+      color: #8BCD32;
+    }
+    li a:hover {
+
+        background-color: #FDA02D;
+    }
 h1 {
-	margin: 0;
-    break-before: always;
-    color: green;
+  color: #8BCD32;
+  font-size: 6vw;
 }
 
-h2, h3 {
-    break-after: avoid;
-    break-inside: avoid;
+h2{
+  margin: 0;
+  font-size: 4vw;
 }
 
-.menu {
-column-count: 4;
-column-gap: 40px;
-column-rule: solid 1px;
-column-rule-color: green;
-text-align: center;
-/*vertical-align:text-top;*/
-}
-
-.menu hr {
-break-after: column;
-}
 </style>
+<link rel= "stylesheet" href= "gustavo_style.css">
 </head>
 
-
 <body>
-<div class="menu">
-<h1>Step 1</h1>
-<h2> Choose your Lettuce</h2>
-<ul>
-  <li>Romaine</li>
-  <li>Mixed Greens</a></li>
-  <li>Arugula</li>
-  <li>Kale</li>
-</ul>
-
-<h1>Step2</h1>
-<h2> Choose your Vegetables</h2>
-  <li>Tomato</li>
-  <li>Onion</a></li>
-  <li>Cabbage</li>
-
-<h1>Step3</h1>
-<h2> Choose your Grain</h2>
-  <li>Rice</li>
-  <li>Noodles</a></li>
-  <li>Crutons</li>
-  <li>Side Bread</li>
-
-
-<h1>Step4</h1>
-<h2> Choose your Protein</h2>
-  <li>Chicken</li>
-  <li>Beef</a></li>
-  <li>Tuna</li>
-  <li>Tofu</li>
-
-</div>
-
-</body>
-</html>
-
+  <div class="menu">
+    <div class="keeptogether">
+      <ul>
+      <h1>Step 1<h1>
+      <li><h2><a href="vegetable.html">Choose your Vegetables</a></h2></li>
+        <li>Lettuce</li>
+        <li>Tomato</li>
+        <li>Onion</a></li>
+        <li>Cabbage</li>
+      </ul>
+    </div>   
+<br><br>
+    <div class="keeptogether">
+      <h1>Step 2</h1>
+      <li><h2><a href="grains.html">Choose your Grain</a></h2><li>
+      <ul>
+        <li>Rice</li>
+        <li>Noodles</a></li>
+        <li>Crutons</li>
+        <li>Side Bread</li>
+      </ul>
+    </div>   
+<br><br>
+    <div class="keeptogether"> 
+      <h1>Step 3</h1>
+      <li><h2><a href="protein.html">Choose your Protein</a></h2><li>
+      <ul>
+        <li>Chicken</li>
+        <li>Beef</a></li>
+        <li>Tuna</li>
+        <li>Tofu</li> 
+      </ul>
+    </div>     
+ </div>
 
 
 
