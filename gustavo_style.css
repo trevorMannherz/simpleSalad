@@ -1,17 +1,4 @@
 <style type='text/css'> 
-.menu {
-    column-count: 3;
-    column-gap: 40px;
-    column-rule: solid 1px;
-    column-rule-color: #8BCD32;
-    text-align: center;
-    vertical-align:text-top;
- }
- .keeptogether {
-    display: inline-block;
-    width: 100%;
- }
-
 body{
     font-family: Roboto, Arial, Helvetica, sans-serif;
     text-align: center;
