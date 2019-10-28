@@ -122,7 +122,7 @@ body{
   background-color: #FDA02D;
 }
 .header img {
-    display: inline-block;
+    width: auto;
 }
 </style>
 
