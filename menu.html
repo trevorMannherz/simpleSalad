@@ -3,7 +3,12 @@
 <head>
 <link rel="stylesheet" type="text/css" href="main.css">
 <style> 
-
+img.header {
+    width: auto;
+}
+body {
+  margin-top: 70px;
+}
 .menu {
   column-count: 3;
   column-gap: 40px;
@@ -12,12 +17,10 @@
   text-align: center;
   vertical-align:text-top;
 }
-
 .keeptogether {
   display: inline-block;
   width: 100%;
 }
-
 .menu li{
     display: block;
     color: #8BCD32;
@@ -27,36 +30,31 @@
     font-size: 2.5vw;
     padding:10px;
 }
-
 .menu li a{
   text-decoration: none;
   color: #8BCD32;
 }
-
 .menu li a:hover {
 
     background-color: #FDA02D;
 }
-
 h1 {
   color: #8BCD32;
   font-size: 6vw;
 }
-
 h2{
   margin: 0;
   font-size: 4vw;
 }
-
 </style>
 </head>
 
 <body>
 <ul class="header">
-  <li class="header"><a href="index.html">SimpleSalad</a></li>
-  <li class="header"><a href="menu.html">Menu</a></li>
-  <li class="header"><a href="order.html">Order</a></li>
-  <li class="header"><a href="contact.html">Contact</a></li>
+  <li class="header"><a class="header" href="index.html">SimpleSalad</a></li>
+  <li class="header"><a class="header" href="menu.html">Menu</a></li>
+  <li class="header"><a class="header" href="order.html">Order</a></li>
+  <li class="header"><a class="header" href="contact.html">Contact</a></li>
 </ul>
 
 <div class="menu">
