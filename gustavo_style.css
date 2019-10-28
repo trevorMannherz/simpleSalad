@@ -121,5 +121,8 @@ body{
 .header li a:hover {
   background-color: #FDA02D;
 }
+.header img {
+    display: inline-block;
+}
 </style>
 
