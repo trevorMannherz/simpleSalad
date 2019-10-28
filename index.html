@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
     <script src="jquery/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="jquery/jquery.cycle.all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css">
@@ -21,35 +22,32 @@
                 background-color: #080;
             }
         </style>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <script type="text/javascript">
-        $(document).ready(function() {	
-            $('.slideshow').cycle({
-                fx: 'fade',
-                timeout: 1000,
-                pause: 1,
+        <script type="text/javascript">
+            $(document).ready(function() {	
+                $('.slideshow').cycle({
+                    fx: 'fade',
+                    timeout: 1000,
+                    pause: 1,
+                });
             });
-        });
-    </script>
+        </script>
     </head>
-    <body>
-    
-    <ul class="header">
-        <li class="header"><a class="header" href="index.html">Simple Salad</a></li>
-        <li class="header"><a class="header" href="menu.html">Menu</a></li>
-        <li class="header"><a class="header" href="order.html">Order</a></li>
-        <li class="header"><a class="header" href="contact.html">Contact</a></li>
-    </ul>
-    <div id="slideshowContainer">
-        <h1 style="text-align: center">Giving you the quality that you deserve</h1>
-        <div class="slideshow">
-            <img src="images/pic1.jpg" width="600" height="300" />
-            <img src="images/pic2.jpg" width="600" height="300" />
-            <img src="images/pic3.jpg" width="600" height="300" /> 
-            <img src="images/pic4.jpg" width="600" height="300" />          
-            <img src="images/pic5.jpg" width="600" height="300" />                   
-        </div>
-    </div>
-    
-</body>
+    <body>    
+        <ul class="header">
+            <li class="header"><a class="header" href="index.html">Simple Salad</a></li>
+            <li class="header"><a class="header" href="menu.html">Menu</a></li>
+            <li class="header"><a class="header" href="order.html">Order</a></li>
+            <li class="header"><a class="header" href="contact.html">Contact</a></li>
+        </ul>
+        <div id="slideshowContainer">
+            <h1 style="text-align: center">Giving you the quality that you deserve</h1>
+            <div class="slideshow">
+                <img src="images/pic1.jpg" width="600" height="300" />
+                <img src="images/pic2.jpg" width="600" height="300" />
+                <img src="images/pic3.jpg" width="600" height="300" /> 
+                <img src="images/pic4.jpg" width="600" height="300" />          
+                <img src="images/pic5.jpg" width="600" height="300" />                   
+            </div>
+        </div> 
+    </body>
 </html>
