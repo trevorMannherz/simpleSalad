@@ -37,7 +37,7 @@ body{
     color: #FFFFFF;
 }
 
-.header ul {
+ul.header {
   font-size: 1.3em;
   list-style-type: none;
   overflow: hidden;
@@ -48,20 +48,20 @@ body{
   margin: 0;
   padding: 0;
 }
-.header li {
+li.header {
   float: left;
 }
-.header li a {
+li.header a.header {
   display: block;
   color: #FFF;
   text-align: center;
   padding: 30px;
   text-decoration: none;
 }
-.header li a:hover {
+li.header a.header:hover {
   background-color: #FDA02D;
 }
-.header img {
+img.header {
     width: auto;
 }
 </style>
