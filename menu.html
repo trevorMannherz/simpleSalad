@@ -15,8 +15,11 @@
     display: inline-block;
     width: 100%;
  }
- 
-li{
+ body{
+/*    background-color: #DCEDFC;*/
+ }
+
+    menu li{
         display: block;
         color: #8BCD32;
         text-align: center;
@@ -25,15 +28,14 @@ li{
         font-size: 2.5vw;
         padding:10px;
     }
-li a{
+    menu li a{
       text-decoration: none;
       color: #8BCD32;
     }
- li a:hover {
+    menu li a:hover {
 
         background-color: #FDA02D;
     }
- 
 h1 {
   color: #8BCD32;
   font-size: 6vw;
@@ -45,10 +47,18 @@ h2{
 }
 
 </style>
+<link rel= "stylesheet" href= "gustavo_style.css">
 </head>
 
 <body>
-  <div class="menu">
+<ul class="header">
+  <li class="header"><a href="index.html">SimpleSalad</a></li>
+  <li class="header"><a href="menu.html">Menu</a></li>
+  <li class="header"><a href="order.html">Order</a></li>
+  <li class="header"><a href="contact.html">Contact</a></li>
+</ul>
+
+<div class="menu">
     <div class="keeptogether">
       <h1>Step 1</h1>
       <li><h2><a href="vegetable.html">Choose your Vegetables</a></h2></li>
